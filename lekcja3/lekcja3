@@ -1,0 +1,36 @@
+let pizzas = ["pepperoni", "quattrofromaggi", "capricciosa"];
+let prices = [30, 40, 50]
+let cart = []
+let index;
+let sum = 0;
+function addPizzaToCart(pizza){
+    cart.push(pizza)
+    if(pizza == "pepperoni"){
+        index = 0;
+    }else if(pizza == "quattrofromaggi"){
+        index = 1;
+    }else if(pizza == "capricciosa"){
+        index = 2
+    }else{
+        alert("Błędna pizza");
+    }
+}
+
+function finalPrice(cart,code=""){
+    for(let i=0; i<cart.length; i++){
+        sum += prices[i]
+    }
+    if(code == "PizzaRabat26" && cart.length>=3){
+        sum = sum - (sum*0.2)
+    }
+    return sum
+}
+
+addPizzaToCart("pepperoni")
+addPizzaToCart("quattrofromaggi")
+addPizzaToCart("capricciosa")
+
+console.log(cart)
+
+let result = finalPrice(cart, "PizzaRabat26")
+console.log(result)
