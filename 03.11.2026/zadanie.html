@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objętość stożka i ostrosłupa</title>
+</head>
+<body>
+<main>
+    <section>
+        <h2>Stożek</h2>
+        <form>
+            <label for="stozek_r">Promień r:</label>
+            <input type="number" id="stozek_r" step="any">
+
+            <label for="stozek_H">Wysokość H:</label>
+            <input type="number" id="stozek_H" step="any">
+
+            <input type="button" value="Oblicz objętość stożka" id="btn_stozek">
+        </form>
+        <p id="wynik_stozek"></p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Ostrosłup</h2>
+        <form>
+            <label for="ostroslup_a">Bok a:</label>
+            <input type="number" id="ostroslup_a" step="any">
+
+            <label for="ostroslup_b">Bok b:</label>
+            <input type="number" id="ostroslup_b" step="any">
+
+            <label for="ostroslup_H">Wysokosc H:</label>
+            <input type="number" id="ostroslup_H" step="any">
+
+            <input type="button" value="Oblicz objętość ostrosłupa" id="btn_ostroslup">
+        </form>
+        <p id="wynik_ostroslup"></p>
+    </section>
+</main>
+<script src="zadanie.js"></script>
+</body>
+</html>
